@@ -1,0 +1,4845 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "syntaxError",
+          "message": {
+            "text": "Unmatched '}'. Configuration: ''."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/addons/51degrees/51d.c",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 398
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "unknownMacro",
+          "message": {
+            "text": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/addons/ot/src/filter.c",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 414
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "syntaxError",
+          "message": {
+            "text": "syntax error"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/addons/ot/src/group.c",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "unknownMacro",
+          "message": {
+            "text": "There is an unknown macro here somewhere. Configuration is required. If FLT_OT_DBG_ARGS is a macro then please configure it."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/addons/ot/src/opentracing.c",
+                  "index": 3
+                },
+                "region": {
+                  "startLine": 108
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "unknownMacro",
+          "message": {
+            "text": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/addons/ot/src/parser.c",
+                  "index": 4
+                },
+                "region": {
+                  "startLine": 1137
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "unknownMacro",
+          "message": {
+            "text": "There is an unknown macro here somewhere. Configuration is required. If FLT_OT_RUN_ONCE is a macro then please configure it."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/addons/ot/src/parser.c",
+                  "index": 4
+                },
+                "region": {
+                  "startLine": 1147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "memleak",
+          "message": {
+            "text": "Memory leak: buf"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/admin/dyncookie/dyncookie.c",
+                  "index": 5
+                },
+                "region": {
+                  "startLine": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "integerOverflow",
+          "message": {
+            "text": "Signed integer overflow for expression '1<<bit'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/admin/iprange/iprange.c",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 79
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/admin/iprange/iprange.c",
+                            "index": 6
+                          },
+                          "region": {
+                            "startLine": 86
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/admin/iprange/iprange.c",
+                            "index": 6
+                          },
+                          "region": {
+                            "startLine": 79
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "nullPointer",
+          "message": {
+            "text": "Null pointer dereference: (struct shared_context*)NULL"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/cache.c",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 409
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "nullPointer",
+          "message": {
+            "text": "Null pointer dereference: (struct shared_block*)NULL"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/cache.c",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 414
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "comparePointers",
+          "message": {
+            "text": "Comparing pointers that point to different objects"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/debug.c",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 962
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/debug.c",
+                            "index": 8
+                          },
+                          "region": {
+                            "startLine": 974
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/debug.c",
+                            "index": 8
+                          },
+                          "region": {
+                            "startLine": 974
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/debug.c",
+                            "index": 8
+                          },
+                          "region": {
+                            "startLine": 963
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/debug.c",
+                            "index": 8
+                          },
+                          "region": {
+                            "startLine": 974
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/debug.c",
+                            "index": 8
+                          },
+                          "region": {
+                            "startLine": 962
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/eb32sctree.c",
+                  "index": 9
+                },
+                "region": {
+                  "startLine": 263
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/eb32tree.c",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/eb32tree.c",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 161
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/eb64tree.c",
+                  "index": 11
+                },
+                "region": {
+                  "startLine": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/eb64tree.c",
+                  "index": 11
+                },
+                "region": {
+                  "startLine": 161
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/ebpttree.c",
+                  "index": 12
+                },
+                "region": {
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: node"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/ebpttree.c",
+                  "index": 12
+                },
+                "region": {
+                  "startLine": 151
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: item"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/lru.c",
+                  "index": 13
+                },
+                "region": {
+                  "startLine": 260
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "uninitvar",
+          "message": {
+            "text": "Uninitialized variable: item"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/lru.c",
+                  "index": 13
+                },
+                "region": {
+                  "startLine": 252
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/lru.c",
+                            "index": 13
+                          },
+                          "region": {
+                            "startLine": 260
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/lru.c",
+                            "index": 13
+                          },
+                          "region": {
+                            "startLine": 252
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "internalAstError",
+          "message": {
+            "text": "Syntax Error: AST broken, 'if' doesn't have two operands."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/mworker.c",
+                  "index": 14
+                },
+                "region": {
+                  "startLine": 121
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 702
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 735
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 746
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 757
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 768
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 769
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 770
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 788
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 795
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 802
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 508
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 702
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 735
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 746
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 757
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 768
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 769
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 770
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 788
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 795
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 802
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 515
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 702
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 735
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 746
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 757
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 768
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 769
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 770
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 788
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 795
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 802
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 518
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 702
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 702
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 735
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 735
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 746
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 746
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 757
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 757
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 768
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 768
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 769
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 769
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 770
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 770
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 788
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 788
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 795
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 795
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'cursor' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/peers.c",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 802
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 519
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 506
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/peers.c",
+                            "index": 15
+                          },
+                          "region": {
+                            "startLine": 802
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "memleak",
+          "message": {
+            "text": "Memory leak: hdr"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/proxy.c",
+                  "index": 16
+                },
+                "region": {
+                  "startLine": 788
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "nullPointer",
+          "message": {
+            "text": "Null pointer dereference"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/sock.c",
+                  "index": 17
+                },
+                "region": {
+                  "startLine": 846
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "nullPointer",
+          "message": {
+            "text": "Null pointer dereference: (struct shared_block*)NULL"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/ssl_sock.c",
+                  "index": 18
+                },
+                "region": {
+                  "startLine": 4065
+                }
+              }
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'addr_copy' might be accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3143
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3143
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3143
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "warning"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'date' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3816
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3624
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3622
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3816
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3816
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'date' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3906
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3624
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3622
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3906
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3906
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'date' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3821
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3658
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3656
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3821
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3821
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'date' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3854
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3658
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3656
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3854
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3854
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'date' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3908
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3658
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3656
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3908
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3908
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "objectIndex",
+          "message": {
+            "text": "The address of local variable 'date' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/tools.c",
+                  "index": 19
+                },
+                "region": {
+                  "startLine": 3849
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3692
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3690
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3849
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/tools.c",
+                            "index": 19
+                          },
+                          "region": {
+                            "startLine": 3849
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "ctuuninitvar",
+          "message": {
+            "text": "Using argument toklen that points at uninitialized variable n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/i/haproxy/src/mjson.c",
+                  "index": 20
+                },
+                "region": {
+                  "startLine": 284
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/mjson.c",
+                            "index": 20
+                          },
+                          "region": {
+                            "startLine": 275
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///c:/i/haproxy/src/mjson.c",
+                            "index": 20
+                          },
+                          "region": {
+                            "startLine": 284
+                          }
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "Severity": "error"
+          }
+        },
+        {
+          "ruleId": "toomanyconfigs",
+          "message": {
+            "text": "The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information."
+          },
+          "properties": {
+            "Severity": "information"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "CppCheck",
+          "version": "2.5.0"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/addons/51degrees/51d.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/addons/ot/src/filter.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/addons/ot/src/group.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/addons/ot/src/opentracing.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/addons/ot/src/parser.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/admin/dyncookie/dyncookie.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/admin/iprange/iprange.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/cache.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/debug.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/eb32sctree.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/eb32tree.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/eb64tree.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/ebpttree.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/lru.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/mworker.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/peers.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/proxy.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/sock.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/ssl_sock.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/tools.c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/i/haproxy/src/mjson.c"
+          }
+        }
+      ],
+      "columnKind": "utf16CodeUnits"
+    }
+  ]
+}
